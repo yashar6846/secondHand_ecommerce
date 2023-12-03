@@ -1,27 +1,27 @@
 export const navOptions = [
     {
       id: "home",
-      label: "Home",
+      label: "خانه",
       path: "/",
     },
     {
       id: "listing",
-      label: "All Products",
+      label: "محصولات",
       path: "/product/listing/all-products",
     },
     {
       id: "listingMen",
-      label: "Men",
+      label: "لوازم خانه",
       path: "/product/listing/men",
     },
     {
       id: "listingWomen",
-      label: "Women",
+      label: "ورزشی",
       path: "/product/listing/women",
     },
     {
       id: "listingKids",
-      label: "kids",
+      label: "ماشین",
       path: "/product/listing/kids",
     },
   ];
