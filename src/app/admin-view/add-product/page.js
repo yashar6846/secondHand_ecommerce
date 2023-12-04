@@ -209,7 +209,7 @@ export default function AdminAddNewProduct() {
             ) : currentUpdatedProduct !== null ? (
               "Update Product"
             ) : (
-              "Add Product"
+              "افزودن محصول"
             )}
           </button>
         </div>

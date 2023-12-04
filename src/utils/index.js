@@ -29,12 +29,12 @@ export const navOptions = [
   export const adminNavOptions = [
     {
       id: "adminListing",
-      label: "Manage All Products",
+      label: "مدیریت محصولات",
       path: "/admin-view/all-products",
     },
     {
       id: "adminNewProduct",
-      label: "Add New Product",
+      label: "اضافه کردن محصولات",
       path: "/admin-view/add-product",
     },
   ];
@@ -144,7 +144,7 @@ export const navOptions = [
       id: "deliveryInfo",
       type: "text",
       placeholder: "Enter deliveryInfo",
-      label: "Delivery Info",
+      label: " ادرس  دقیق با لوکیشن",
       componentType: "input",
     },
     {

@@ -133,7 +133,7 @@ export default function Navbar() {
                 }
                 onClick={() => router.push("/")}
               >
-                Client View
+              نمای مشتری
               </button>
             ) : (
               <button
