@@ -112,7 +112,7 @@ export default function Navbar() {
                   }
                   onClick={()=>router.push('/account')}
                 >
-                  Hesab
+                  حساب کاربر
                 </button>
                 <button
                   className={
@@ -120,7 +120,7 @@ export default function Navbar() {
                   }
                   onClick={()=> setShowCartModal(true)}
                 >
-                  Cart
+                  کارت
                 </button>
                 
               </Fragment>
@@ -142,7 +142,7 @@ export default function Navbar() {
                   "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                 }
               >
-                Admin View
+                ادمین 
               </button>
             )
           ) : null}
@@ -153,7 +153,7 @@ export default function Navbar() {
                    "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                  }
                >
-                Saptenam
+                خروج
               </button>
             ) : (
               <button
@@ -162,7 +162,7 @@ export default function Navbar() {
                   "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                 }
               >
-              ورود
+              ثبت نام
               </button>
             )}
             <button
@@ -173,7 +173,7 @@ export default function Navbar() {
               aria-expanded="false"
               onClick={() => setShowNavModal(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">منوی اصلی را باز کنید</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"

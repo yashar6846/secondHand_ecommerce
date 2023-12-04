@@ -78,8 +78,8 @@ export default function Register() {
             <div className="flex flex-col items-center justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl relative z-10">
               <p className="w-full text-4xl font-medium text-center font-serif">
                 {isRegistered
-                  ? "Registered successfully !"
-                  : "Sign up for an account"}
+                  ? "با موفقیت ثبت شد !"
+                  : " یک حساب کار بری ثبت نام کنید"}
               </p>
               {isRegistered ? (
                 <button
@@ -128,7 +128,7 @@ export default function Register() {
                   >
                     {pageLevelLoader ? (
                       <ComponentLevelLoader
-                        text={"Registering"}
+                        text={"ثبت نام"}
                         color={"#ffffff"}
                         loading={pageLevelLoader}
                       />
