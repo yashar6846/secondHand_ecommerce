@@ -4,6 +4,7 @@ import { GlobalContext } from "@/context";
 import { getAllAdminProducts } from "@/services/product";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const { isAuthUser } = useContext(GlobalContext);
@@ -30,18 +31,21 @@ export default function Home() {
       <section className="">
         <div className="grid max-w-screen-xl px-4 py-8 mx-suto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-            انچه شما میخواهید به قیمت های مناسب
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl">
+              انچه شما میخواهید به قیمت{" "}
+              <Image
+                src="/dastdo.png"
+                alt="Picture of the author"
+                width={30}
+                height={30}
+              />{" "}
+              مناسب
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-            روش‌های رایج کلاهبرداری
-- دریافت بیعانه
-- دریافت پول به بهانهٔ هزینهٔ ارسال
-- تحویل کالای تقلبی یا معیوب
-- درخواست اطلاعات بانکی یا هویتی
-- درخواست «کد تأییدِ ۶ رقمی ورود به حساب »
-<h2 className=" text-red-600">در این موارد به شدت احتیاط کنید</h2>
-
+              روش‌های رایج کلاهبرداری - دریافت بیعانه - دریافت پول به بهانهٔ
+              هزینهٔ ارسال - تحویل کالای تقلبی یا معیوب - درخواست اطلاعات بانکی
+              یا هویتی - درخواست «کد تأییدِ ۶ رقمی ورود به حساب »
+              <h2 className=" text-red-600">در این موارد به شدت احتیاط کنید</h2>
             </p>
 
             <button
@@ -54,7 +58,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://sellfree.ir/images/melkaya.jpg"
+              src="https://www.avalfars.ir/wp-content/uploads/2022/11/%D8%B3%D9%85%D8%B3%D8%A7%D8%B1%DB%8C-500x250.jpg"
               alt="Explore Shop Collection"
             />
           </div>
@@ -65,7 +69,13 @@ export default function Home() {
               <div className="max-w-md mx-auto text-center lg:text-left">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-                  مجموعه فروش دست دو
+                    مجموعه فروش دست دو
+                    <Image
+                    src="/handsacent.png"
+                    alt="Picture of the author"
+                    width={400}
+                    height={400}
+                  />
                   </h2>
                 </div>
                 <button
@@ -116,7 +126,7 @@ export default function Home() {
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl font-bold text-gray-950 sm:text-3xl">
-            خرید بر اساس طبقه بندی
+              خرید بر اساس طبقه بندی
             </h2>
           </div>
           <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">

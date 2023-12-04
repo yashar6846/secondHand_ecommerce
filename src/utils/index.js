@@ -1,7 +1,7 @@
 export const navOptions = [
     {
       id: "home",
-      label: "خانه",
+      label: "صفحه اصلی",
       path: "/",
     },
     {
