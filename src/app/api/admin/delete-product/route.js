@@ -18,7 +18,7 @@ export async function DELETE(req) {
       if (!id)
         return NextResponse.json({
           success: false,
-          message: "Product ID is required",
+          message: "شناسه محصول الزامی است",
         });
 
       const deletedProduct = await Product.findByIdAndDelete(id);
@@ -26,25 +26,25 @@ export async function DELETE(req) {
       if (deletedProduct) {
         return NextResponse.json({
           success: true,
-          message: "Product deleted successfully",
+          message: "محصول با موفقیت حذف شد",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "Failed to delete the product ! Please try again",
+          message: "محصول حذف نشد! لطفا دوباره تلاش کنید",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not authenticated",
+        message: "شما احراز هویت نشده اید",
       });
     }
   } catch (e) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

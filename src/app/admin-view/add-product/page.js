@@ -159,7 +159,8 @@ export default function AdminAddNewProduct() {
             type="file"
             onChange={handleImage}
           />
-
+          
+          
           <div className="flex gap-2 flex-col">
             <label>Available sizes</label>
             <TileComponent

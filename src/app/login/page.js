@@ -114,7 +114,7 @@ export default function Login() {
                         }
                          /> 
                    ):(
-                    'Login'
+                    'تایید'
                 )}
                 </button>
                 <div className="flex flex-col gap-2">

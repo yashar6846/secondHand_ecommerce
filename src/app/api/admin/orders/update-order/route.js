@@ -39,25 +39,25 @@ export async function PUT(req) {
       if (updateOrder) {
         return NextResponse.json({
           success: true,
-          message: "Order status updated successfully! ",
+          message: "وضعیت سفارش با موفقیت به روز شد",
         });
       } else {
         return NextResponse.json({
           success: true,
-          message: "failed to update the status of order",
+          message: "به روز رسانی وضعیت سفارش ناموفق بود",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not autorized !",
+        message: "شما مجاز نیستید",
       });
     }
   } catch (e) {
     console.log(e);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

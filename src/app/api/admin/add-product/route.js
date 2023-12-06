@@ -66,25 +66,25 @@ export async function POST(req) {
       if (newlyCreatedProduct) {
         return NextResponse.json({
           success: true,
-          message: "Product added successfully",
+          message: "محصول با موفقیت اضافه شد",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "Failed to add the product ! please try again",
+          message: "محصول اضافه نشد! لطفا دوباره تلاش کنید",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not autorized !",
+        message: "شما مجاز نیستید",
       });
     }
   } catch (error) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

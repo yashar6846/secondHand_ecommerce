@@ -31,7 +31,7 @@ export async function POST(req) {
     if (!checkUser) {
       return NextResponse.json({
         success: false,
-        message: "Account not found with this email",
+        message: "حسابی با این ایمیل پیدا نشد",
       });
     }
 
@@ -39,7 +39,7 @@ export async function POST(req) {
     if (!checkPassword) {
       return NextResponse.json({
         success: false,
-        message: "Incorrect password. Please try again !",
+        message: "رمز عبور نادرست لطفا دوباره تلاش کنید !",
       });
     }
 
@@ -65,15 +65,15 @@ export async function POST(req) {
 
     return NextResponse.json({
       success: true,
-      message: "Login successfull!",
+      message: "ورود با موفقیت",
       finalData,
     });
   } catch (e) {
-    console.log("Error while logging In. Please try again");
+    console.log("خطا هنگام ورود به سیستم لطفا دوباره تلاش کنید");
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

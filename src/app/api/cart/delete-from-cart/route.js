@@ -16,7 +16,7 @@ export async function DELETE(req) {
       if (!id)
         return NextResponse.json({
           success: false,
-          message: "Cart Item ID is required",
+          message: "شناسه کالای سبد خرید الزامی است",
         });
 
       const deleteCartItem = await Cart.findByIdAndDelete(id);
@@ -24,24 +24,24 @@ export async function DELETE(req) {
       if (deleteCartItem) {
         return NextResponse.json({
           success: true,
-          message: "Cart Item deleted successfully",
+          message: "مورد سبد خرید با موفقیت حذف شد",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "Failed to delete Cart item ! Please try again.",
+          message: "مورد سبد خرید حذف نشد! لطفا دوباره تلاش کنید.",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not authenticated",
+        message: "شما احراز هویت نشده اید",
       });
     }
   } catch (error) {
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again",
+      message: "مشکلی پیش آمد! لطفا دوباره تلاش کنید",
     });
   }
 }

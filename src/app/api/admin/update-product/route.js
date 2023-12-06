@@ -49,25 +49,25 @@ export async function PUT(req) {
       if (updatedProduct) {
         return NextResponse.json({
           success: true,
-          message: "Product updated successfully",
+          message: "محصول با موفقیت به روز شد",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "Failed to update the product ! Please try again later",
+          message: "به روز رسانی محصول انجام نشد! لطفاً بعداً دوباره امتحان کنید",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not authenticated",
+        message: "شما احراز هویت نشده اید",
       });
     }
   } catch (e) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

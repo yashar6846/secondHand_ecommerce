@@ -21,14 +21,14 @@ export async function GET(req) {
       return NextResponse.json({
         success: false,
         status: 204,
-        message: "No Products found !",
+        message: "هیچ محصولی یافت نشد",
       });
     }
   } catch (e) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

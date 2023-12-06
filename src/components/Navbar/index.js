@@ -159,10 +159,10 @@ export default function Navbar() {
               <button
                 onClick={() => router.push("/login")}
                 className={
-                  "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
+                  "mt-1.5 inline-block bg-red-500 px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                 }
               >
-              ثبت نام
+            ورود
               </button>
             )}
             <button

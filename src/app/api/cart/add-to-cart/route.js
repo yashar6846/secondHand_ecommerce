@@ -44,7 +44,7 @@ export async function POST(req) {
         return NextResponse.json({
           success: false,
           message:
-            "Product is already added in cart! Please add different product",
+            "محصول قبلاً به سبد خرید اضافه شده است! لطفا محصول متفاوتی را اضافه کنید",
         });
       }
 
@@ -55,25 +55,25 @@ export async function POST(req) {
       if (saveProductToCart) {
         return NextResponse.json({
           success: true,
-          message: "Product is added to cart !",
+          message: "محصول به سبد خرید اضافه شد !",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "failed to add the product to cart ! Please try again.",
+          message: "محصول به سبد خرید اضافه نشد! لطفا دوباره تلاش کنید.",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not authenticated",
+        message: "لطفا: یک حساب کاربری ایجاد کنید",
       });
     }
   } catch (e) {
     console.log(e);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

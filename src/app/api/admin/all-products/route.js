@@ -21,20 +21,20 @@ export async function GET(req) {
         return NextResponse.json({
           success: false,
           status: 204,
-          message: "No Products found",
+          message: "هیچ محصولی یافت نشد",
         });
       }
       }else{
         return NextResponse.json({
           success: false,
-          message: "You are not authorized ",
+          message: "شما مجاز نیستید",
         })
       }
   } catch (error) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

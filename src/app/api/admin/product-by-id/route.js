@@ -15,7 +15,7 @@ export async function GET(req) {
       return NextResponse.json({
         success: false,
         status: 400,
-        message: "Product id is required",
+        message: "شناسه محصول مورد نیاز است",
       });
     }
     const getData = await Product.find({ _id: productId });
@@ -26,14 +26,14 @@ export async function GET(req) {
       return NextResponse.json({
         success: false,
         status: 204,
-        message: "No Product found",
+        message: "محصولی یافت نشد",
       });
     }
   } catch (error) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

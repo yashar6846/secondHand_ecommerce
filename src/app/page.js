@@ -32,21 +32,21 @@ export default function Home() {
         <div className="grid max-w-screen-xl px-4 py-8 mx-suto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl">
-              انچه شما میخواهید به قیمت{" "}
+              انچه شما میخواهید به قیمت
               <Image
                 src="/dastdo.png"
                 alt="Picture of the author"
                 width={30}
                 height={30}
-              />{" "}
+              />
               مناسب
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+            <div className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
               روش‌های رایج کلاهبرداری - دریافت بیعانه - دریافت پول به بهانهٔ
               هزینهٔ ارسال - تحویل کالای تقلبی یا معیوب - درخواست اطلاعات بانکی
               یا هویتی - درخواست «کد تأییدِ ۶ رقمی ورود به حساب »
-              <h2 className=" text-red-600">در این موارد به شدت احتیاط کنید</h2>
-            </p>
+              <p className=" text-red-500"> در این موارد به شدت احتیاط کنید</p>
+            </div>
 
             <button
               type="button"
@@ -71,11 +71,11 @@ export default function Home() {
                   <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
                     مجموعه فروش دست دو
                     <Image
-                    src="/handsacent.png"
-                    alt="Picture of the author"
-                    width={400}
-                    height={400}
-                  />
+                      src="/handsacent.png"
+                      alt="Picture of the author"
+                      width={400}
+                      height={400}
+                    />
                   </h2>
                 </div>
                 <button

@@ -25,20 +25,20 @@ export async function GET(req) {
         return NextResponse.json({
           success: false,
           message:
-            "failed to fetch the orders ! Please try again after some time.",
+            "موفق به دریافت سفارشات نشد! لطفا بعد از مدتی دوباره امتحان کنید.",
         });
       }
     } else {
       return NextResponse.json({
         success: false,
-        message: "You are not autorized !",
+        message: "شما مجاز نیستید ",
       });
     }
   } catch (e) {
     console.log(e);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

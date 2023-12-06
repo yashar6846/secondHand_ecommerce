@@ -6,7 +6,7 @@ export const navOptions = [
     },
     {
       id: "listing",
-      label: "محصولات",
+      label: "دسته بندی",
       path: "/product/listing/all-products",
     },
     {
@@ -16,12 +16,12 @@ export const navOptions = [
     },
     {
       id: "listingWomen",
-      label: "ورزشی",
+      label: "ماشین",
       path: "/product/listing/women",
     },
     {
       id: "listingKids",
-      label: "ماشین",
+      label: "برقی",
       path: "/product/listing/kids",
     },
   ];
@@ -43,21 +43,21 @@ export const navOptions = [
     {
       id: "name",
       type: "text",
-      placeholder: "Enter your name",
+      placeholder: "اسم خود را وارد کن",
       label: "Name",
       componentType: "input",
     },
     {
       id: "email",
       type: "email",
-      placeholder: "Enter your email",
+      placeholder: "ایمیل خود را وارد کنید",
       label: "Email",
       componentType: "input",
     },
     {
       id: "password",
       type: "password",
-      placeholder: "Enter your password",
+      placeholder: "رمز عبور ",
       label: "Password",
       componentType: "input",
     },
@@ -70,11 +70,11 @@ export const navOptions = [
       options: [
         {
           id: "admin",
-          label: "Admin",
+          label: "ادمین",
         },
         {
           id: "customer",
-          label: "customer",
+          label: "مشتری",
         },
       ],
     },
@@ -84,14 +84,14 @@ export const navOptions = [
     {
       id: "email",
       type: "email",
-      placeholder: "Enter your email",
+      placeholder: "ایمیل خود را وارد کنید",
       label: "Email",
       componentType: "input",
     },
     {
       id: "password",
       type: "password",
-      placeholder: "Enter your password",
+      placeholder: "رمز عبور خود را وارد کنید",
       label: "Password",
       componentType: "input",
     },
@@ -102,41 +102,41 @@ export const navOptions = [
       id: "name",
       type: "text",
       placeholder: "Enter name",
-      label: "Name",
+      label: "نام محصول فروشی",
       componentType: "input",
     },
     {
       id: "price",
       type: "number",
       placeholder: "Enter price",
-      label: "Price",
+      label: "قیمت",
       componentType: "input",
     },
     {
       id: "description",
       type: "text",
       placeholder: "Enter description",
-      label: "Description",
+      label: "توضیحات",
       componentType: "input",
     },
     {
       id: "category",
       type: "",
       placeholder: "",
-      label: "Category",
+      label: "دسته بندی",
       componentType: "select",
       options: [
         {
           id: "men",
-          label: "Men",
+          label: "لوازم خانه",
         },
         {
           id: "women",
-          label: "Women",
+          label: " ماشین",
         },
         {
           id: "kids",
-          label: "Kids",
+          label: "برقی",
         },
       ],
     },
@@ -151,16 +151,16 @@ export const navOptions = [
       id: "onSale",
       type: "",
       placeholder: "",
-      label: "On Sale",
+      label: "حراج",
       componentType: "select",
       options: [
         {
           id: "yes",
-          label: "Yes",
+          label: "بله",
         },
         {
           id: "no",
-          label: "No",
+          label: "خیر",
         },
       ],
     },
@@ -168,7 +168,7 @@ export const navOptions = [
       id: "priceDrop",
       type: "number",
       placeholder: "Enter Price Drop",
-      label: "Price Drop",
+      label: "تخفیف",
       componentType: "input",
     },
   ];
