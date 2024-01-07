@@ -69,7 +69,7 @@ export async function POST(req) {
       finalData,
     });
   } catch (e) {
-    console.log("خطا هنگام ورود به سیستم لطفا دوباره تلاش کنید");
+    console.log("Error logging in. Please search again.");
 
     return NextResponse.json({
       success: false,

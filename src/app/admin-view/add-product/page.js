@@ -162,7 +162,7 @@ export default function AdminAddNewProduct() {
           
           
           <div className="flex gap-2 flex-col">
-            <label>Available sizes</label>
+            <label>اندازه های موجود</label>
             <TileComponent
               selected={formData.sizes}
               onClick={handleTileClick}

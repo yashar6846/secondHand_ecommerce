@@ -66,7 +66,7 @@ export async function POST(req) {
     } else {
       return NextResponse.json({
         success: false,
-        message: "لطفا: یک حساب کاربری ایجاد کنید",
+        message: "در صورت نیاز تماس با فروشنده",
       });
     }
   } catch (e) {

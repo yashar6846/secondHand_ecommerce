@@ -101,8 +101,8 @@ export const navOptions = [
     {
       id: "name",
       type: "text",
-      placeholder: "Enter name",
-      label: "نام محصول فروشی",
+      placeholder: "Enter Namber",
+      label: "شماره تماس فروشنده",
       componentType: "input",
     },
     {
@@ -116,7 +116,7 @@ export const navOptions = [
       id: "description",
       type: "text",
       placeholder: "Enter description",
-      label: "توضیحات",
+      label: "توضیحات لوازم فروشی",
       componentType: "input",
     },
     {
@@ -138,13 +138,14 @@ export const navOptions = [
           id: "kids",
           label: "برقی",
         },
+      
       ],
     },
     {
       id: "deliveryInfo",
       type: "text",
       placeholder: "Enter deliveryInfo",
-      label: " ادرس  دقیق با لوکیشن",
+      label: "ادرس فروشنده",
       componentType: "input",
     },
     {

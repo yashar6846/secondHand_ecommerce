@@ -29,7 +29,7 @@ export async function POST(req) {
     } else {
       return NextResponse.json({
         success: true,
-        message: "You are not authenticated",
+        message: "شما احراز هویت نشده اید",
       });
     }
   } catch (e) {
@@ -37,7 +37,7 @@ export async function POST(req) {
     return NextResponse.json({
       status: 500,
       success: false,
-      message: "Something went wrong ! Please try again",
+      message: "مشکلی پیش آمد! لطفا دوباره تلاش کنید",
     });
   }
 }

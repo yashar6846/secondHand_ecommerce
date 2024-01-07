@@ -87,7 +87,7 @@ export default function Register() {
                 text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
                 "
                 >
-                  Login
+                   ورود
                 </button>
               ) : (
                 <div className="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
@@ -133,7 +133,7 @@ export default function Register() {
                         loading={pageLevelLoader}
                       />
                     ) : (
-                      "Register"
+                      "ثبت نام"
                     )} 
             
                   </button>

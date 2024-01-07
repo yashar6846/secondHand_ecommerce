@@ -37,7 +37,7 @@ export async function POST(req) {
     if (isUserAlreadyExists) {
       return NextResponse.json({
         success: false,
-        message: "User is already exists. Please try with different email.",
+        message: "کاربر از قبل وجود دارد. لطفا با ایمیل های مختلف امتحان کنید.",
       });
     } else {
       const hashPassword = await hash(password, 12);
@@ -52,16 +52,16 @@ export async function POST(req) {
       if (newlyCreatedUser) {
         return NextResponse.json({
           success: true,
-          message: "Account created successfully.",
+          message: "حساب با موفقیت ایجاد شد.",
         });
       }
     }
   } catch (error) {
-    console.log("Error while new user registration. Please try again");
+    console.log("خطا هنگام ثبت نام کاربر جدید. لطفا دوباره تلاش کنید");
 
     return NextResponse.json({
       success: false,
-      message: "Something went wrong ! Please try again later",
+      message: "مشکلی پیش آمد! لطفاً بعداً دوباره امتحان کنید",
     });
   }
 }

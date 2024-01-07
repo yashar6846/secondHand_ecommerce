@@ -187,7 +187,7 @@ export default function Account() {
                       </div>
                     ))
                   ) : (
-                    <p>No address found ! Please add a new address below</p>
+                    <p>آدرسی پیدا نشد! لطفا یک آدرس جدید در زیر اضافه کنید</p>
                   )}
                 </div>
               )}

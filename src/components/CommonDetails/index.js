@@ -112,7 +112,7 @@ export default function CommonDetails({ item }) {
                     }
                   />
                 ) : (
-                  "Add to Cart"
+                  "پیام"
                 )}
               </button>
             </div>

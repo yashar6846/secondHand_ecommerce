@@ -94,7 +94,8 @@ export default function ProductButton({ item }) {
   ) : (
     <>
       <button
-        onClick={() => handleAddToCart(item)}
+        // onClick={() => (item)} //handleAddToCart
+        onClick={()=> router.push(`/product/${item._id}`)}
         className="mt-1.5 flex w-full justify-center bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
       >
         {componentLevelLoader &&
@@ -106,7 +107,7 @@ export default function ProductButton({ item }) {
             loading={componentLevelLoader && componentLevelLoader.loading}
           />
         ) : (
-          "Add To Cart"
+          "توضیحات" //AddToCart
         )}
       </button>
     </>
